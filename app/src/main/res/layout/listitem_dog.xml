@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/listItem_rootView"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="?attr/selectableItemBackground"
+	android:gravity="center_vertical"
+	android:minHeight="?attr/listPreferredItemHeight"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin">
+
+	<net.steamcrafted.materialiconlib.MaterialIconView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:materialIcon="android"
+		app:materialIconColor="@color/colorPrimary"
+		app:materialIconSize="24dp"/>
+
+	<TextView
+		android:id="@+id/listItemDog_titleTextView"
+		style="@style/TextAppearance.AppCompat.Body1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/itemSpacing"
+		android:layout_weight="1"
+		android:textColor="@color/textPrimary"/>
+</LinearLayout>

@@ -9,7 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.telmediq.docstorage.R;
 import com.telmediq.docstorage.TelmediqActivity;
@@ -19,10 +18,7 @@ import com.telmediq.docstorage.helper.Constants;
 import com.telmediq.docstorage.helper.Utils;
 import com.telmediq.docstorage.model.File;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -101,6 +97,8 @@ public class HomeActivity extends TelmediqActivity {
 
 		switch (id) {
 			case R.id.action_settings:
+				Intent intent = new Intent(HomeActivity.this, ExampleAnimalActivity.class);
+				startActivity(intent);
 				break;
 		}
 
